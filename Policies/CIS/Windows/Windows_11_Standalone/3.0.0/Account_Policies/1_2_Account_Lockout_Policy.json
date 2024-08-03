@@ -1,0 +1,38 @@
+[
+    {
+        "_control": "1.2.1",
+        "Level": "L1",
+        "Name": "Ensure 'Account lockout duration' is set to '15 or more minute(s)'",
+        "Source": "secpol",
+        "Key": "LockoutDuration",
+        "Type": "int",
+        "Value": 15
+    },
+    {
+        "_control": "1.2.2",
+        "Level": "L1",
+        "Name": "Ensure 'Account lockout threshold' is set to '5 or fewer invalid logon attempt(s), but not 0'",
+        "Source": "secpol",
+        "Key": "LockoutBadCount",
+        "Type": "int",
+        "Value": 5
+    },
+    {
+        "_control": "1.2.3",
+        "Level": "L1",
+        "Name": "Ensure 'Allow Administrator account lockout' is set to 'Enabled'",
+        "Source": "secpol",
+        "Key": "AllowAdministratorLockout",
+        "Type": "int",
+        "Value": 1
+    },
+    {
+        "_control": "1.2.4",
+        "Level": "L1",
+        "Name": "Ensure 'Reset account lockout counter after' is set to '15 or more minute(s)'",
+        "Source": "secpol",
+        "Key": "ResetLockoutCount",
+        "Type": "int",
+        "Value": 15
+    }
+]
