@@ -1,0 +1,47 @@
+[
+    {
+        "_control": "2.3.9.1",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network server: Amount of idle time required before suspending session' is set to '15 or fewer minute(s)'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanManServer\\Parameters\\AutoDisconnect",
+        "Type": "DWORD",
+        "Value": 15
+    },
+    {
+        "_control": "2.3.9.2",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network server: Digitally sign communications (always)' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanManServer\\Parameters\\RequireSecuritySignature",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.9.3",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network server: Digitally sign communications (if client agrees)' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanManServer\\Parameters\\EnableSecuritySignature",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.9.4",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network server: Disconnect clients when logon hours expire' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanManServer\\Parameters\\enableforcedlogoff",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.9.5",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network server: Server SPN target name validation level' is set to 'Accept if provided by client' or higher",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanManServer\\Parameters\\SMBServerNameHardeningLevel",
+        "Type": "DWORD",
+        "Value": 1
+    }
+]
