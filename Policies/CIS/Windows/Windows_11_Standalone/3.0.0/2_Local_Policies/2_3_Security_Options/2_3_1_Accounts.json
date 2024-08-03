@@ -14,7 +14,7 @@
         "Name": "Ensure 'Accounts: Guest account status' is set to 'Disabled'",
         "Source": "local_user",
         "Key": "active",
-        "Type": "string",
+        "Type": "REG_SZ",
         "Value": "no"
     },
     {
@@ -32,7 +32,7 @@
         "Name": "Configure 'Accounts: Rename administrator account'",
         "Source": "local_user",
         "Key": "rename",
-        "Type": "string",
+        "Type": "REG_SZ",
         "Value": "Administrator"
     },
     {
@@ -41,7 +41,7 @@
         "Name": "Configure 'Accounts: Rename guest account'",
         "Source": "local_user",
         "Key": "rename",
-        "Type": "string",
+        "Type": "REG_SZ",
         "Value": "Guest"
     }
 ]
