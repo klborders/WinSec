@@ -1,0 +1,74 @@
+[
+    {
+        "_control": "2.3.7.1",
+        "Level": "L1",
+        "Name": "Ensure 'Interactive logon: Do not require CTRL+ALT+DEL' is set to 'Disabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\DisableCAD",
+        "Type": "DWORD",
+        "Value": 0
+    },
+    {
+        "_control": "2.3.7.2",
+        "Level": "L1",
+        "Name": "Ensure 'Interactive logon: Don't display last signed-in' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\DontDisplayLastUserName",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.7.3",
+        "Level": "BL",
+        "Name": "Ensure 'Interactive logon: Machine account lockout threshold' is set to '10 or fewer invalid logon attempts, but not 0'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\MaxDevicePasswordFailedAttempts",
+        "Type": "DWORD",
+        "Value": 10
+    },
+    {
+        "_control": "2.3.7.4",
+        "Level": "L1",
+        "Name": "Ensure 'Interactive logon: Machine inactivity limit' is set to '900 or fewer second(s), but not 0'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\InactivityTimeoutSecs",
+        "Type": "DWORD",
+        "Value": 900
+    },
+    {
+        "_control": "2.3.7.5",
+        "Level": "L1",
+        "Name": "Configure 'Interactive logon: Message text for users attempting to log on'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\LegalNoticeText",
+        "Type": "REG_SZ",
+        "Value": "Attempting to Logon"
+    },
+    {
+        "_control": "2.3.7.6",
+        "Level": "L1",
+        "Name": "Configure 'Interactive logon: Message title for users attempting to log on'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\LegalNoticeCaption",
+        "Type": "REG_SZ",
+        "Value": "Logon Message"
+    },
+    {
+        "_control": "2.3.7.7",
+        "Level": "L1",
+        "Name": "Ensure 'Interactive logon: Prompt user to change password before expiration' is set to 'between 5 and 14 days'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\PasswordExpiryWarning",
+        "Type": "DWORD",
+        "Value": 5
+    },
+    {
+        "_control": "2.3.7.8",
+        "Level": "L1",
+        "Name": "Ensure 'Interactive logon: Smart card removal behavior' is set to 'Lock Workstation' or higher",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\ScRemoveOption",
+        "Type": "REG_SZ",
+        "Value": "1"
+    }
+]
