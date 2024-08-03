@@ -1,7 +1,7 @@
 [
     {
         "_control": "2.3.4.1",
-        "Level": "L1",
+        "Level": "L2",
         "Name": "Ensure 'Devices: Prevent users from installing printer drivers' is set to 'Enabled'",
         "Source": "registry",
         "Key": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Print\\Providers\\LanMan Print Services\\Servers\\AddPrinterDrivers",
