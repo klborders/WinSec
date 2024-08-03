@@ -1,0 +1,47 @@
+[
+    {
+        "_control": "2.3.1.1",
+        "Level": "L1",
+        "Name": "Ensure 'Accounts: Block Microsoft accounts' is set to 'Users can't add or log on with Microsoft accounts'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\NoConnectedUser",
+        "Type": "DWORD",
+        "Value": 3
+    },
+    {
+        "_control": "2.3.1.2",
+        "Level": "L1",
+        "Name": "Ensure 'Accounts: Guest account status' is set to 'Disabled'",
+        "Source": "local_user",
+        "Key": "active",
+        "Type": "string",
+        "Value": "no"
+    },
+    {
+        "_control": "2.3.1.3",
+        "Level": "L1",
+        "Name": "Ensure 'Accounts: Limit local account use of blank passwords to console logon only' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa\\LimitBlankPasswordUse",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.1.4",
+        "Level": "L1",
+        "Name": "Configure 'Accounts: Rename administrator account'",
+        "Source": "local_user",
+        "Key": "rename",
+        "Type": "string",
+        "Value": "Administrator"
+    },
+    {
+        "_control": "2.3.1.5",
+        "Level": "L1",
+        "Name": "Configure 'Accounts: Rename guest account'",
+        "Source": "local_user",
+        "Key": "rename",
+        "Type": "string",
+        "Value": "Guest"
+    }
+]
