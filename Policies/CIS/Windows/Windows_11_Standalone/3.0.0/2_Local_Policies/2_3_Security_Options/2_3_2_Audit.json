@@ -1,0 +1,20 @@
+[
+    {
+        "_control": "2.3.2.1",
+        "Level": "L1",
+        "Name": "Ensure 'Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa\\SCENoApplyLegacyAuditPolicy",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.2.2",
+        "Level": "L1",
+        "Name": "Ensure 'Audit: Shut down system immediately if unable to log security audits' is set to 'Disabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa\\CrashOnAuditFail",
+        "Type": "DWORD",
+        "Value": 0
+    }
+]
