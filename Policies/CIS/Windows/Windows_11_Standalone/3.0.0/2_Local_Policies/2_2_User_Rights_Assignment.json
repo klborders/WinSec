@@ -1,0 +1,353 @@
+[
+    {
+        "_control": "2.2.1",
+        "Level": "L1",
+        "Name": "Ensure 'Access Credential Manager as a trusted caller' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeTrustedCredManAccessPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.2",
+        "Level": "L1",
+        "Name": "Ensure 'Access this computer from the network' is set to 'Administrators, Remote Desktop Users'",
+        "Source": "secpol",
+        "Key": "SeNetworkLogonRight",
+        "Type": "array",
+        "Value": ["Administrators", "Remote Desktop Users"]
+    },
+    {
+        "_control": "2.2.3",
+        "Level": "L1",
+        "Name": "Ensure 'Act as part of the operating system' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeTcbPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.4",
+        "Level": "L1",
+        "Name": "Ensure 'Adjust memory quotas for a process' is set to 'Administrators, LOCAL SERVICE, NETWORK SERVICE'",
+        "Source": "secpol",
+        "Key": "SeIncreaseQuotaPrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "LOCAL SERVICE", "NETWORK SERVICE"]
+    },
+    {
+        "_control": "2.2.5",
+        "Level": "L1",
+        "Name": "Ensure 'Allow log on locally' is set to 'Administrators, Users'",
+        "Source": "secpol",
+        "Key": "SeInteractiveLogonRight",
+        "Type": "array",
+        "Value": ["Administrators", "Users"]
+    },
+    {
+        "_control": "2.2.6",
+        "Level": "L1",
+        "Name": "Ensure 'Allow log on through Remote Desktop Services' is set to 'Administrators, Remote Desktop Users'",
+        "Source": "secpol",
+        "Key": "SeRemoteInteractiveLogonRight",
+        "Type": "array",
+        "Value": ["Administrators", "Remote Desktop Users"]
+    },
+    {
+        "_control": "2.2.7",
+        "Level": "L1",
+        "Name": "Ensure 'Back up files and directories' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeBackupPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.8",
+        "Level": "L1",
+        "Name": "Ensure 'Change the system time' is set to 'Administrators, LOCAL SERVICE'",
+        "Source": "secpol",
+        "Key": "SeSystemtimePrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "LOCAL SERVICE"]
+    },
+    {
+        "_control": "2.2.9",
+        "Level": "L1",
+        "Name": "Ensure 'Change the time zone' is set to 'Administrators, LOCAL SERVICE, Users'",
+        "Source": "secpol",
+        "Key": "SeTimeZonePrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "LOCAL SERVICE", "Users"]
+    },
+    {
+        "_control": "2.2.10",
+        "Level": "L1",
+        "Name": "Ensure 'Create a pagefile' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeCreatePagefilePrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.11",
+        "Level": "L1",
+        "Name": "Ensure 'Create a token object' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeCreateTokenPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.12",
+        "Level": "L1",
+        "Name": "Ensure 'Create global objects' is set to 'Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE'",
+        "Source": "secpol",
+        "Key": "SeCreateGlobalPrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "LOCAL SERVICE", "NETWORK SERVICE", "SERVICE"]
+    },
+    {
+        "_control": "2.2.13",
+        "Level": "L1",
+        "Name": "Ensure 'Create permanent shared objects' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeCreatePermanentPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.14",
+        "Level": "L1",
+        "Name": "Configure 'Create symbolic links'",
+        "Source": "secpol",
+        "Key": "SeCreateSymbolicLinkPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.15",
+        "Level": "L1",
+        "Name": "Ensure 'Debug programs' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeDebugPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.16",
+        "Level": "L1",
+        "Name": "Ensure 'Deny access to this computer from the network' to include 'Guests'",
+        "Source": "secpol",
+        "Key": "SeDenyNetworkLogonRight",
+        "Type": "array",
+        "Value": ["Guests"]
+    },
+    {
+        "_control": "2.2.17",
+        "Level": "L1",
+        "Name": "Ensure 'Deny log on as a batch job' to include 'Guests'",
+        "Source": "secpol",
+        "Key": "SeDenyBatchLogonRight",
+        "Type": "array",
+        "Value": ["Guests"]
+    },
+    {
+        "_control": "2.2.18",
+        "Level": "L1",
+        "Name": "Ensure 'Deny log on as a service' to include 'Guests'",
+        "Source": "secpol",
+        "Key": "SeDenyServiceLogonRight",
+        "Type": "array",
+        "Value": ["Guests"]
+    },
+    {
+        "_control": "2.2.19",
+        "Level": "L1",
+        "Name": "Ensure 'Deny log on locally' to include 'Guests'",
+        "Source": "secpol",
+        "Key": "SeDenyInteractiveLogonRight",
+        "Type": "array",
+        "Value": ["Guests"]
+    },
+    {
+        "_control": "2.2.20",
+        "Level": "L1",
+        "Name": "Ensure 'Deny log on through Remote Desktop Services' to include 'Guests'",
+        "Source": "secpol",
+        "Key": "SeDenyRemoteInteractiveLogonRight",
+        "Type": "array",
+        "Value": ["Guests"]
+    },
+    {
+        "_control": "2.2.21",
+        "Level": "L1",
+        "Name": "Ensure 'Enable computer and user accounts to be trusted for delegation' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeEnableDelegationPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.22",
+        "Level": "L1",
+        "Name": "Ensure 'Force shutdown from a remote system' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeRemoteShutdownPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.23",
+        "Level": "L1",
+        "Name": "Ensure 'Generate security audits' is set to 'LOCAL SERVICE, NETWORK SERVICE'",
+        "Source": "secpol",
+        "Key": "SeAuditPrivilege",
+        "Type": "array",
+        "Value": ["LOCAL SERVICE", "NETWORK SERVICE"]
+    },
+    {
+        "_control": "2.2.24",
+        "Level": "L1",
+        "Name": "Ensure 'Impersonate a client after authentication' is set to 'Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE'",
+        "Source": "secpol",
+        "Key": "SeImpersonatePrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "LOCAL SERVICE", "NETWORK SERVICE"]
+    },
+    {
+        "_control": "2.2.25",
+        "Level": "L1",
+        "Name": "Ensure 'Increase scheduling priority' is set to 'Administrators, Window Manager\\Window Manager Group'",
+        "Source": "secpol",
+        "Key": "SeIncreaseBasePriorityPrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "Window Manager\\Window Manager Group"]
+    },
+    {
+        "_control": "2.2.26",
+        "Level": "L1",
+        "Name": "Ensure 'Load and unload device drivers' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "'SeLoadDriverPrivilege'",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.27",
+        "Level": "L1",
+        "Name": "Ensure 'Lock pages in memory' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeLockMemoryPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.28",
+        "Level": "L1",
+        "Name": "Ensure 'Log on as a batch job' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeBatchLogonRight",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.29",
+        "Level": "L1",
+        "Name": "Configure 'Log on as a service'",
+        "Source": "secpol",
+        "Key": "SeServiceLogonRight",
+        "Type": "array",
+        "Value": ["NT SERVICES\\ALL SERVICES"]
+    },
+    {
+        "_control": "2.2.30",
+        "Level": "L1",
+        "Name": "Ensure 'Manage auditing and security log' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeSecurityPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.31",
+        "Level": "L1",
+        "Name": "Ensure 'Modify an object label' is set to 'No One'",
+        "Source": "secpol",
+        "Key": "SeRelabelPrivilege",
+        "Type": "array",
+        "Value": []
+    },
+    {
+        "_control": "2.2.32",
+        "Level": "L1",
+        "Name": "Ensure 'Modify firmware environment values' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeSystemEnvironmentPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.33",
+        "Level": "L1",
+        "Name": "Ensure 'Perform volume maintenance tasks' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeManageVolumePrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.34",
+        "Level": "L1",
+        "Name": "Ensure 'Profile single process' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeProfileSingleProcessPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.35",
+        "Level": "L1",
+        "Name": "Ensure 'Profile system performance' is set to 'Administrators, NT SERVICE\\WdiServiceHost'",
+        "Source": "secpol",
+        "Key": "SeSystemProfilePrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "NT SERVICE\\WdiServiceHost"]
+    },
+    {
+        "_control": "2.2.36",
+        "Level": "L1",
+        "Name": "Ensure 'Replace a process level token' is set to 'LOCAL SERVICE, NETWORK SERVICE'",
+        "Source": "secpol",
+        "Key": "SeAssignPrimaryTokenPrivilege",
+        "Type": "array",
+        "Value": ["LOCAL SERVICE", "NETWORK SERVICE"]
+    },
+    {
+        "_control": "2.2.37",
+        "Level": "L1",
+        "Name": "Ensure 'Restore files and directories' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeRestorePrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    },
+    {
+        "_control": "2.2.38",
+        "Level": "L1",
+        "Name": "Ensure 'Shut down the system' is set to 'Administrators, Users'",
+        "Source": "secpol",
+        "Key": "SeShutdownPrivilege",
+        "Type": "array",
+        "Value": ["Administrators", "Users"]
+    },
+    {
+        "_control": "2.2.39",
+        "Level": "L1",
+        "Name": "Ensure 'Take ownership of files or other objects' is set to 'Administrators'",
+        "Source": "secpol",
+        "Key": "SeTakeOwnershipPrivilege",
+        "Type": "array",
+        "Value": ["Administrators"]
+    }
+]
