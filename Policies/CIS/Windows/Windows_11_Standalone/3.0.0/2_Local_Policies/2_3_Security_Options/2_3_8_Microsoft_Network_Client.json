@@ -1,0 +1,29 @@
+[
+    {
+        "_control": "2.3.8.1",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network client: Digitally sign communications (always)' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\RequireSecuritySignature",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.8.2",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network client: Digitally sign communications (if server agrees)' is set to 'Enabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\EnableSecuritySignature",
+        "Type": "DWORD",
+        "Value": 1
+    },
+    {
+        "_control": "2.3.8.3",
+        "Level": "L1",
+        "Name": "Ensure 'Microsoft network client: Send unencrypted password to third-party SMB servers' is set to 'Disabled'",
+        "Source": "registry",
+        "Key": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\EnablePlainTextPassword",
+        "Type": "DWORD",
+        "Value": 0
+    }
+]
